@@ -1,0 +1,93 @@
+html, body, #app {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+img {
+    transition: opacity 0.5s ease-in-out;
+}
+
+@font-face {
+    font-family: "AliVF";
+    src:
+            url("//at.alicdn.com/wf/webfont/UMvdKIEkXihZ/CkBKWpLtE66b.woff2") format("woff2"),
+            url("//at.alicdn.com/wf/webfont/UMvdKIEkXihZ/bgHo9uJKeWHS.woff") format("woff");
+    font-display: swap;
+}
+
+.main-layout {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-layout-frame {
+    height: 100%;
+    width: 100%;
+}
+
+.main-layout-header {
+    height: 10%;
+    width: 100%;
+}
+
+.main-layout-content {
+    height: 90%;
+    width: 100%;
+}
+
+.main-layout-header-part-drag {
+    height: 20%;
+    width: 100%;
+    -webkit-app-region: drag;
+}
+
+.main-layout-header-part-logo {
+    height: 80%;
+    width: 100%;
+}
+
+.main-layout-logo-img {
+    height: 35px;
+    width: 40px;
+    margin-left: 10px;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+.main-layout-func-img {
+    margin-top: 5px;
+    height: 25px;
+    width: 25px;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+.main-layout-func-img:hover {
+    margin-top: 5px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+.main-toolbar-logo {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height: 90%;
+}
+
+.main-logo-font {
+    font-family: AliVF, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-top: 6px;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}

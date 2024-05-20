@@ -1,0 +1,8 @@
+2024-05-19 16:29:17,948 ERROR 181608 [ee-core] [socket/IpcServer] invoke/handle throw error: TypeError: Error processing argument at index 0, conversion failure from 
+    at ExampleController.tran (D:\Project\frontend-repo\electron-egg\electron\controller\example.js:40:17)
+    at Object.callFn (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\core\lib\utils\index.js:52:21)
+    at Index.classControllerMiddleware (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\core\lib\loader\mixin\controller.js:89:20)
+    at D:\Project\frontend-repo\electron-egg\node_modules\ee-core\socket\ipcServer.js:100:37
+    at node:electron/js2c/browser_init:193:567
+    at EventEmitter.<anonymous> (node:electron/js2c/browser_init:165:11606)
+    at EventEmitter.emit (node:events:527:28)

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ikunfans-app" />
+        <module name="ikunfans-connect" />
+        <module name="ikunfans-web" />
+        <module name="ikunfans-db" />
+        <module name="ikunfans-common" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ikunfans-app" options="-parameters" />
+      <module name="ikunfans-boot" options="" />
+      <module name="ikunfans-common" options="-parameters" />
+      <module name="ikunfans-connect" options="-parameters" />
+      <module name="ikunfans-db" options="-parameters" />
+      <module name="ikunfans-web" options="-parameters" />
+    </option>
+  </component>
+</project>

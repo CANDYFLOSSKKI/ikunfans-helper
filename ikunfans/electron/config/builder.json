@@ -1,0 +1,53 @@
+{
+  "productName": "ikunfans",
+  "appId": "com.electron.ikunfans",
+  "directories": {
+    "output": "out"
+  },
+  "asar": true,
+  "files": [
+    "**/*",
+    "!frontend/",
+    "!run/",
+    "!logs/",
+    "!data/"
+  ],
+  "extraResources": {
+    "from": "build/extraResources/",
+    "to": "extraResources"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowElevation": true,
+    "allowToChangeInstallationDirectory": true,
+    "installerIcon": "build/icons/logo-origin.ico",
+    "uninstallerIcon": "build/icons/logo-origin.ico",
+    "installerHeaderIcon": "build/icons/logo-origin.ico",
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "ikunfans"
+  },
+  "mac": {
+    "icon": "build/icons/icon.icns",
+    "artifactName": "${productName}-${os}-${version}-${arch}.${ext}",
+    "darkModeSupport": true,
+    "hardenedRuntime": false
+  },
+  "win": {
+    "icon": "build/icons/logo-origin.ico",
+    "artifactName": "${productName}-${os}-${version}-${arch}.${ext}",
+    "target": [
+      {
+        "target": "nsis"
+      }
+    ]
+  },
+  "linux": {
+    "icon": "build/icons/icon.icns",
+    "artifactName": "${productName}-${os}-${version}-${arch}.${ext}",
+    "target": [
+      "deb"
+    ],
+    "category": "Utility"
+  }
+}

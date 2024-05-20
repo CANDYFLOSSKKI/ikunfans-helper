@@ -1,0 +1,47 @@
+2024-05-19 11:16:48,506 INFO 170548 [ee-core] Env: local, Type: spa
+2024-05-19 11:16:48,506 INFO 170548 [ee-core] App running at: http://localhost:13880
+2024-05-19 11:47:25,234 INFO 170548 [ee-core] [lib/eeApp] window-all-closed quit
+2024-05-19 11:47:31,657 INFO 156356 [ee-core] Env: local, Type: spa
+2024-05-19 11:47:31,658 INFO 156356 [ee-core] App running at: http://localhost:13880
+2024-05-19 11:48:26,031 INFO 174124 [ee-core] Env: local, Type: spa
+2024-05-19 11:48:26,032 INFO 174124 [ee-core] App running at: http://localhost:13880
+2024-05-19 12:13:23,292 INFO 172308 [ee-core] Env: local, Type: spa
+2024-05-19 12:13:23,293 INFO 172308 [ee-core] App running at: http://localhost:13880
+2024-05-19 12:58:44,665 INFO 153084 [ee-core] Env: local, Type: spa
+2024-05-19 12:58:44,666 INFO 153084 [ee-core] App running at: http://localhost:13880
+2024-05-19 14:00:10,211 INFO 168848 [ee-core] Env: local, Type: spa
+2024-05-19 14:00:10,211 INFO 168848 [ee-core] App running at: http://localhost:13880
+2024-05-19 15:11:51,015 INFO 178232 [ee-core] Env: local, Type: spa
+2024-05-19 15:11:51,016 INFO 178232 [ee-core] App running at: http://localhost:13880
+2024-05-19 15:15:21,294 INFO 176892 [ee-core] Env: local, Type: spa
+2024-05-19 15:15:21,295 INFO 176892 [ee-core] App running at: http://localhost:13880
+2024-05-19 15:18:26,312 INFO 175540 [ee-core] Env: local, Type: spa
+2024-05-19 15:18:26,313 INFO 175540 [ee-core] App running at: http://localhost:13880
+2024-05-19 15:20:15,475 INFO 173452 [ee-core] Env: local, Type: spa
+2024-05-19 15:20:15,476 INFO 173452 [ee-core] App running at: http://localhost:13880
+2024-05-19 15:21:40,557 INFO 177544 [ee-core] Env: local, Type: spa
+2024-05-19 15:21:40,558 INFO 177544 [ee-core] App running at: http://localhost:13880
+2024-05-19 15:41:24,015 INFO 173568 [ee-core] Env: local, Type: spa
+2024-05-19 15:41:24,015 INFO 173568 [ee-core] App running at: http://localhost:13880
+2024-05-19 15:42:17,280 INFO 181100 [ee-core] Env: local, Type: spa
+2024-05-19 15:42:17,281 INFO 181100 [ee-core] App running at: http://localhost:13880
+2024-05-19 15:52:36,983 INFO 181064 [ee-core] Env: local, Type: spa
+2024-05-19 15:52:36,984 INFO 181064 [ee-core] App running at: http://localhost:13880
+2024-05-19 16:13:30,843 INFO 177708 [ee-core] Env: local, Type: spa
+2024-05-19 16:13:30,844 INFO 177708 [ee-core] App running at: http://localhost:13880
+2024-05-19 16:27:45,874 INFO 64152 [ee-core] Env: local, Type: spa
+2024-05-19 16:27:45,874 INFO 64152 [ee-core] App running at: http://localhost:13880
+2024-05-19 16:29:08,436 INFO 181608 [ee-core] Env: local, Type: spa
+2024-05-19 16:29:08,437 INFO 181608 [ee-core] App running at: http://localhost:13880
+2024-05-19 16:29:17,949 ERROR 181608 [ee-core] [socket/IpcServer] invoke/handle throw error: TypeError: Error processing argument at index 0, conversion failure from 
+    at ExampleController.tran (D:\Project\frontend-repo\electron-egg\electron\controller\example.js:40:17)
+    at Object.callFn (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\core\lib\utils\index.js:52:21)
+    at Index.classControllerMiddleware (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\core\lib\loader\mixin\controller.js:89:20)
+    at D:\Project\frontend-repo\electron-egg\node_modules\ee-core\socket\ipcServer.js:100:37
+    at node:electron/js2c/browser_init:193:567
+    at EventEmitter.<anonymous> (node:electron/js2c/browser_init:165:11606)
+    at EventEmitter.emit (node:events:527:28)
+2024-05-19 16:31:18,512 INFO 178680 [ee-core] Env: local, Type: spa
+2024-05-19 16:31:18,513 INFO 178680 [ee-core] App running at: http://localhost:13880
+2024-05-19 16:35:10,304 INFO 175084 [ee-core] Env: local, Type: spa
+2024-05-19 16:35:10,305 INFO 175084 [ee-core] App running at: http://localhost:13880

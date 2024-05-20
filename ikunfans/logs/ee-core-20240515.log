@@ -1,0 +1,208 @@
+2024-05-15 11:25:09,943 INFO 42804 [ee-core] Env: local, Type: spa
+2024-05-15 11:25:09,944 INFO 42804 [ee-core] App running at: http://localhost:8080
+2024-05-15 11:25:33,258 INFO 36628 [ee-core] Env: local, Type: spa
+2024-05-15 11:25:33,258 INFO 36628 [ee-core] App running at: http://localhost:8080
+2024-05-15 12:02:26,844 INFO 46124 [ee-core] Env: local, Type: spa
+2024-05-15 12:02:26,844 INFO 46124 [ee-core] App running at: http://localhost:8080
+2024-05-15 12:44:17,336 INFO 52924 [ee-core] Env: local, Type: spa
+2024-05-15 12:44:17,336 INFO 52924 [ee-core] App running at: http://localhost:8080
+2024-05-15 12:46:28,368 INFO 7612 [ee-core] Env: local, Type: spa
+2024-05-15 12:46:28,369 INFO 7612 [ee-core] App running at: http://localhost:8080
+2024-05-15 12:59:58,695 INFO 52432 [ee-core] Env: local, Type: spa
+2024-05-15 12:59:58,695 INFO 52432 [ee-core] App running at: http://localhost:8080
+2024-05-15 13:01:35,006 INFO 31388 [ee-core] Env: local, Type: spa
+2024-05-15 13:01:35,006 INFO 31388 [ee-core] App running at: http://localhost:8080
+2024-05-15 13:07:43,888 INFO 52000 [ee-core] Env: local, Type: spa
+2024-05-15 13:07:43,888 INFO 52000 [ee-core] App running at: http://localhost:8080
+2024-05-15 13:08:55,065 INFO 37404 [ee-core] Env: local, Type: spa
+2024-05-15 13:08:55,065 INFO 37404 [ee-core] App running at: http://localhost:8080
+2024-05-15 13:09:45,006 INFO 43012 [ee-core] Env: local, Type: spa
+2024-05-15 13:09:45,007 INFO 43012 [ee-core] App running at: http://localhost:8080
+2024-05-15 13:14:26,484 ERROR 55132 nodejs.unhandledRejectionError: Addon class 'tray' not exists or do not call directly at the top!
+    at Object.get (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\addon\index.js:28:13)
+    at D:\Project\frontend-repo\electron-egg\electron\preload\index.js:12:9
+    at AppLoader.loadFile (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\core\lib\loader\ee_loader.js:259:13)
+    at Index._loderPreload (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\ee\eeApp.js:368:33)
+    at Index.createWindow (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\ee\eeApp.js:98:16)
+name: "unhandledRejectionError"
+pid: 55132
+hostname: CANDYFLOSS
+
+2024-05-15 13:14:28,511 INFO 55132 [ee-core] Env: local, Type: spa
+2024-05-15 13:14:28,512 INFO 55132 [ee-core] App running at: http://localhost:8080
+2024-05-15 13:14:50,927 ERROR 28784 nodejs.unhandledRejectionError: Addon class 'tray' not exists or do not call directly at the top!
+    at Object.get (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\addon\index.js:28:13)
+    at D:\Project\frontend-repo\electron-egg\electron\preload\index.js:12:9
+    at AppLoader.loadFile (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\core\lib\loader\ee_loader.js:259:13)
+    at Index._loderPreload (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\ee\eeApp.js:368:33)
+    at Index.createWindow (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\ee\eeApp.js:98:16)
+name: "unhandledRejectionError"
+pid: 28784
+hostname: CANDYFLOSS
+
+2024-05-15 13:14:52,955 INFO 28784 [ee-core] Env: local, Type: spa
+2024-05-15 13:14:52,956 INFO 28784 [ee-core] App running at: http://localhost:8080
+2024-05-15 13:17:34,785 ERROR 27732 nodejs.unhandledRejectionError: Addon class 'tray' not exists or do not call directly at the top!
+    at Object.get (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\addon\index.js:28:13)
+    at D:\Project\frontend-repo\electron-egg\electron\preload\index.js:12:9
+    at AppLoader.loadFile (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\core\lib\loader\ee_loader.js:259:13)
+    at Index._loderPreload (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\ee\eeApp.js:368:33)
+    at Index.createWindow (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\ee\eeApp.js:98:16)
+name: "unhandledRejectionError"
+pid: 27732
+hostname: CANDYFLOSS
+
+2024-05-15 13:17:36,825 INFO 27732 [ee-core] Env: local, Type: spa
+2024-05-15 13:17:36,825 INFO 27732 [ee-core] App running at: http://localhost:8080
+2024-05-15 13:17:50,828 ERROR 30428 nodejs.unhandledRejectionError: Addon class 'tray' not exists or do not call directly at the top!
+    at Object.get (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\addon\index.js:28:13)
+    at D:\Project\frontend-repo\electron-egg\electron\preload\index.js:12:9
+    at AppLoader.loadFile (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\core\lib\loader\ee_loader.js:259:13)
+    at Index._loderPreload (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\ee\eeApp.js:368:33)
+    at Index.createWindow (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\ee\eeApp.js:98:16)
+name: "unhandledRejectionError"
+pid: 30428
+hostname: CANDYFLOSS
+
+2024-05-15 13:17:52,856 INFO 30428 [ee-core] Env: local, Type: spa
+2024-05-15 13:17:52,857 INFO 30428 [ee-core] App running at: http://localhost:8080
+2024-05-15 13:18:25,472 ERROR 46020 nodejs.unhandledRejectionError: Addon class 'tray' not exists or do not call directly at the top!
+    at Object.get (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\addon\index.js:28:13)
+    at D:\Project\frontend-repo\electron-egg\electron\preload\index.js:12:9
+    at AppLoader.loadFile (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\core\lib\loader\ee_loader.js:259:13)
+    at Index._loderPreload (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\ee\eeApp.js:368:33)
+    at Index.createWindow (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\ee\eeApp.js:98:16)
+name: "unhandledRejectionError"
+pid: 46020
+hostname: CANDYFLOSS
+
+2024-05-15 13:18:27,506 INFO 46020 [ee-core] Env: local, Type: spa
+2024-05-15 13:18:27,507 INFO 46020 [ee-core] App running at: http://localhost:8080
+2024-05-15 13:18:32,544 INFO 46020 [ee-core] [lib/eeApp] window-all-closed quit
+2024-05-15 13:22:44,516 ERROR 53780 nodejs.unhandledExceptionError: Cannot create BrowserWindow before app is ready
+    at Object.<anonymous> (D:\Project\frontend-repo\electron-egg\main.js:5:13)
+    at Module._compile (node:internal/modules/cjs/loader:1120:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1175:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:829:12)
+    at c._load (node:electron/js2c/asar_bundle:5:13343)
+    at loadApplicationPackage (D:\Project\frontend-repo\electron-egg\node_modules\electron\dist\resources\default_app.asar\main.js:121:16)
+    at Object.<anonymous> (D:\Project\frontend-repo\electron-egg\node_modules\electron\dist\resources\default_app.asar\main.js:233:9)
+    at Module._compile (node:internal/modules/cjs/loader:1120:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1175:10)
+name: "unhandledExceptionError"
+pid: 53780
+hostname: CANDYFLOSS
+
+2024-05-15 13:22:44,958 ERROR 53780 nodejs.unhandledRejectionError: Addon class 'tray' not exists or do not call directly at the top!
+    at Object.get (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\addon\index.js:28:13)
+    at D:\Project\frontend-repo\electron-egg\electron\preload\index.js:12:9
+    at AppLoader.loadFile (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\core\lib\loader\ee_loader.js:259:13)
+    at Index._loderPreload (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\ee\eeApp.js:368:33)
+    at Index.createWindow (D:\Project\frontend-repo\electron-egg\node_modules\ee-core\ee\eeApp.js:98:16)
+name: "unhandledRejectionError"
+pid: 53780
+hostname: CANDYFLOSS
+
+2024-05-15 13:22:47,007 INFO 53780 [ee-core] Env: local, Type: spa
+2024-05-15 13:22:47,008 INFO 53780 [ee-core] App running at: http://localhost:8080
+2024-05-15 13:23:06,251 ERROR 44564 nodejs.unhandledExceptionError: Cannot create BrowserWindow before app is ready
+    at Object.<anonymous> (D:\Project\frontend-repo\electron-egg\main.js:5:13)
+    at Module._compile (node:internal/modules/cjs/loader:1120:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1175:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:829:12)
+    at c._load (node:electron/js2c/asar_bundle:5:13343)
+    at loadApplicationPackage (D:\Project\frontend-repo\electron-egg\node_modules\electron\dist\resources\default_app.asar\main.js:121:16)
+    at Object.<anonymous> (D:\Project\frontend-repo\electron-egg\node_modules\electron\dist\resources\default_app.asar\main.js:233:9)
+    at Module._compile (node:internal/modules/cjs/loader:1120:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1175:10)
+name: "unhandledExceptionError"
+pid: 44564
+hostname: CANDYFLOSS
+
+2024-05-15 13:23:08,787 INFO 44564 [ee-core] Env: local, Type: spa
+2024-05-15 13:23:08,788 INFO 44564 [ee-core] App running at: http://localhost:8080
+2024-05-15 13:28:57,661 ERROR 56176 nodejs.unhandledExceptionError: Cannot create BrowserWindow before app is ready
+    at Object.<anonymous> (D:\Project\frontend-repo\electron-egg\main.js:5:13)
+    at Module._compile (node:internal/modules/cjs/loader:1120:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1175:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:829:12)
+    at c._load (node:electron/js2c/asar_bundle:5:13343)
+    at loadApplicationPackage (D:\Project\frontend-repo\electron-egg\node_modules\electron\dist\resources\default_app.asar\main.js:121:16)
+    at Object.<anonymous> (D:\Project\frontend-repo\electron-egg\node_modules\electron\dist\resources\default_app.asar\main.js:233:9)
+    at Module._compile (node:internal/modules/cjs/loader:1120:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1175:10)
+name: "unhandledExceptionError"
+pid: 56176
+hostname: CANDYFLOSS
+
+2024-05-15 13:29:00,185 INFO 56176 [ee-core] Env: local, Type: spa
+2024-05-15 13:29:00,185 INFO 56176 [ee-core] App running at: http://localhost:8080
+2024-05-15 13:35:51,681 INFO 8116 [ee-core] Env: local, Type: spa
+2024-05-15 13:35:51,681 INFO 8116 [ee-core] App running at: http://localhost:8080
+2024-05-15 13:37:23,169 INFO 52184 [ee-core] Env: local, Type: spa
+2024-05-15 13:37:23,170 INFO 52184 [ee-core] App running at: http://localhost:8080
+2024-05-15 13:42:04,269 INFO 28676 [ee-core] Env: local, Type: spa
+2024-05-15 13:42:04,269 INFO 28676 [ee-core] App running at: http://localhost:8080
+2024-05-15 13:42:16,192 INFO 53664 [ee-core] Env: local, Type: spa
+2024-05-15 13:42:16,192 INFO 53664 [ee-core] App running at: http://localhost:8080
+2024-05-15 13:42:58,973 INFO 54948 [ee-core] Env: local, Type: spa
+2024-05-15 13:42:58,973 INFO 54948 [ee-core] App running at: http://localhost:8080
+2024-05-15 14:04:43,713 INFO 48888 [ee-core] Env: local, Type: spa
+2024-05-15 14:04:43,713 INFO 48888 [ee-core] App running at: http://localhost:8080
+2024-05-15 14:07:14,357 INFO 53924 [ee-core] Env: local, Type: spa
+2024-05-15 14:07:14,358 INFO 53924 [ee-core] App running at: http://localhost:8080
+2024-05-15 14:10:42,632 INFO 53332 [ee-core] Env: local, Type: spa
+2024-05-15 14:10:42,632 INFO 53332 [ee-core] App running at: http://localhost:8080
+2024-05-15 14:22:27,583 INFO 52008 [ee-core] Env: local, Type: spa
+2024-05-15 14:22:27,583 INFO 52008 [ee-core] App running at: http://localhost:8080
+2024-05-15 14:23:27,761 INFO 53436 [ee-core] Env: local, Type: spa
+2024-05-15 14:23:27,761 INFO 53436 [ee-core] App running at: http://localhost:8080
+2024-05-15 14:35:39,700 INFO 58372 [ee-core] Env: local, Type: spa
+2024-05-15 14:35:39,700 INFO 58372 [ee-core] App running at: http://localhost:8080
+2024-05-15 14:40:44,691 INFO 37480 [ee-core] Env: local, Type: spa
+2024-05-15 14:40:44,692 INFO 37480 [ee-core] App running at: http://localhost:8080
+2024-05-15 14:42:08,108 INFO 55232 [ee-core] Env: local, Type: spa
+2024-05-15 14:42:08,109 INFO 55232 [ee-core] App running at: http://localhost:8080
+2024-05-15 14:42:45,502 INFO 58852 [ee-core] Env: local, Type: spa
+2024-05-15 14:42:45,502 INFO 58852 [ee-core] App running at: http://localhost:8080
+2024-05-15 14:45:26,096 INFO 49468 [ee-core] Env: local, Type: spa
+2024-05-15 14:45:26,097 INFO 49468 [ee-core] App running at: http://localhost:8080
+2024-05-15 14:46:15,862 INFO 29584 [ee-core] Env: local, Type: spa
+2024-05-15 14:46:15,863 INFO 29584 [ee-core] App running at: http://localhost:8080
+2024-05-15 14:49:00,834 INFO 56580 [ee-core] Env: local, Type: spa
+2024-05-15 14:49:00,834 INFO 56580 [ee-core] App running at: http://localhost:8080
+2024-05-15 14:59:57,042 INFO 56536 [ee-core] Env: local, Type: spa
+2024-05-15 14:59:57,042 INFO 56536 [ee-core] App running at: http://localhost:8080
+2024-05-15 15:00:41,072 INFO 60732 [ee-core] Env: local, Type: spa
+2024-05-15 15:00:41,072 INFO 60732 [ee-core] App running at: http://localhost:8080
+2024-05-15 15:05:03,941 INFO 61368 [ee-core] Env: local, Type: spa
+2024-05-15 15:05:03,941 INFO 61368 [ee-core] App running at: http://localhost:8080
+2024-05-15 15:09:20,670 INFO 60088 [ee-core] Env: local, Type: spa
+2024-05-15 15:09:20,670 INFO 60088 [ee-core] App running at: http://localhost:8080
+2024-05-15 15:10:10,696 INFO 45804 [ee-core] Env: local, Type: spa
+2024-05-15 15:10:10,697 INFO 45804 [ee-core] App running at: http://localhost:8080
+2024-05-15 17:22:01,391 INFO 65676 [ee-core] Env: local, Type: spa
+2024-05-15 17:22:01,391 INFO 65676 [ee-core] App running at: http://localhost:8080
+2024-05-15 17:22:54,726 INFO 44076 [ee-core] Env: local, Type: spa
+2024-05-15 17:22:54,726 INFO 44076 [ee-core] App running at: http://localhost:8080
+2024-05-15 17:49:35,132 INFO 65572 [ee-core] Env: local, Type: spa
+2024-05-15 17:49:35,132 INFO 65572 [ee-core] App running at: http://localhost:8080
+2024-05-15 17:57:07,924 INFO 54092 [ee-core] Env: local, Type: spa
+2024-05-15 17:57:07,924 INFO 54092 [ee-core] App running at: http://localhost:8080
+2024-05-15 17:57:11,283 ERROR 54092 [ee-core] [socket/IpcServer] invoke/handle throw error: TypeError: Cannot read properties of undefined (reading 'mainWindow')
+    at ExampleController.hello (D:\Project\frontend-repo\electron-egg\electron\controller\example.js:36:26)
+2024-05-15 19:59:11,906 INFO 67268 [ee-core] Env: local, Type: spa
+2024-05-15 19:59:11,906 INFO 67268 [ee-core] App running at: http://localhost:8080
+2024-05-15 19:59:31,077 INFO 62736 [ee-core] Env: local, Type: spa
+2024-05-15 19:59:31,077 INFO 62736 [ee-core] App running at: http://localhost:8080
+2024-05-15 21:02:09,249 INFO 13236 [ee-core] Env: local, Type: spa
+2024-05-15 21:02:09,249 INFO 13236 [ee-core] App running at: http://localhost:8080
+2024-05-15 21:25:57,242 INFO 5776 [ee-core] Env: local, Type: spa
+2024-05-15 21:25:57,243 INFO 5776 [ee-core] App running at: http://localhost:8080
+2024-05-15 21:31:17,760 INFO 72372 [ee-core] Env: local, Type: spa
+2024-05-15 21:31:17,760 INFO 72372 [ee-core] App running at: http://localhost:8080
+2024-05-15 21:33:22,956 INFO 76696 [ee-core] Env: local, Type: spa
+2024-05-15 21:33:22,957 INFO 76696 [ee-core] App running at: http://localhost:8080
