@@ -71,7 +71,9 @@ public class SubjectWebService {
                 .limit(3)
                 .toList();
         MessagePrintUtil.printCallBackKeyWords(keywords);
-        List<SubjectPostItemData> subjectPostItemDataList = bangumiService.collectTargetSubjects(keywords);
+        List<SubjectPostItemData> subjectPostItemDataList = new ArrayList<>();
+        try { subjectPostItemDataList.addAll(bangumiService.collectTargetSubjects(keywords)); }
+        catch (Exception e) { e.printStackTrace(); }
         if (CollectionEmptyUtil.forList(subjectPostItemDataList)) { return null; }
         List<Integer> subjectIdList = new ArrayList<>(subjectService.getIdList());
         collectAndStoreTagData(subjectIdList, subjectPostItemDataList);

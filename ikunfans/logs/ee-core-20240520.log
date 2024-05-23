@@ -1,0 +1,10 @@
+2024-05-20 16:43:58,111 INFO 234200 [ee-core] Env: local, Type: spa
+2024-05-20 16:43:58,111 INFO 234200 [ee-core] App running at: http://localhost:13880
+2024-05-20 16:44:02,155 INFO 234200 [ee-core] [lib/eeApp] window-all-closed quit
+2024-05-20 16:46:13,445 INFO 194496 [ee-core] Env: local, Type: spa
+2024-05-20 16:46:13,446 INFO 194496 [ee-core] App running at: http://localhost:13880
+2024-05-20 16:53:03,907 INFO 194496 [ee-core] [lib/eeApp] window-all-closed quit
+2024-05-20 16:53:36,412 INFO 235632 [ee-core] Env: local, Type: spa
+2024-05-20 16:53:36,413 INFO 235632 [ee-core] App running at: http://localhost:13880
+2024-05-20 16:55:44,658 INFO 235896 [ee-core] Env: local, Type: spa
+2024-05-20 16:55:44,658 INFO 235896 [ee-core] App running at: http://localhost:13880

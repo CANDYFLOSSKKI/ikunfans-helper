@@ -41,35 +41,33 @@ public class BangumiService {
         this.bangumiTaskAsyncPool = bangumiTaskAsyncPool;
     }
 
-    public List<SubjectPostItemData> collectTargetSubjects(List<String> keywords) {
+    public List<SubjectPostItemData> collectTargetSubjects(List<String> keywords) throws Exception{
         List<SubjectPostItemData> subjectPostItemDataList = new ArrayList<>();
         List<CompletableFuture<BangumiPostSubjectResp>> subjectSearchTaskList = new ArrayList<>();
-        if (CollectionEmptyUtil.forList(keywords)) { return subjectPostItemDataList; }
+        if (CollectionEmptyUtil.forList(keywords)) { return List.of(); }
         AtomicInteger index = new AtomicInteger(0);
         keywords.stream().forEach(keyword -> {
-            subjectSearchTaskList.add(
-                    CompletableFuture.supplyAsync(() -> {
-                        try { Thread.sleep(index.getAndIncrement() * 2000L); }
-                        catch (Exception e) { e.printStackTrace(); }
-                        return bangumiInstance.searchSubjectsV0(ModelTransformUtil.getDefaultBangumiSubjectReq(keyword));
-                    }, bangumiTaskAsyncPool)
-            );
+            subjectSearchTaskList.add(CompletableFuture.supplyAsync(() -> {
+                try { Thread.sleep(index.getAndIncrement() * 1000L); }
+                catch (Exception e) { e.printStackTrace(); }
+                return bangumiInstance.searchSubjectsV0(ModelTransformUtil.getDefaultBangumiSubjectReq(keyword));
+            }, bangumiTaskAsyncPool));
         });
-        try {
-            CompletableFuture.allOf(subjectSearchTaskList.toArray(CompletableFuture[]::new)).get(ASYNC_SERVICE_TIMEOUT, TimeUnit.SECONDS);
-            subjectSearchTaskList.stream().forEach(task -> {
-                try {
-                    List<SubjectPostItemData> itemList = task.get().getData();
-                    if (CollectionEmptyUtil.forList(itemList)) { return; }
-                    subjectPostItemDataList.addAll(itemList.stream().filter(i -> i.getRank() != 0).limit(3).toList());
-                } catch (Exception e) { e.printStackTrace(); }
-            });
-        } catch (Exception e) { e.printStackTrace(); }
-        if (CollectionEmptyUtil.forList(subjectPostItemDataList)) { return subjectPostItemDataList; }
+        CompletableFuture.allOf(subjectSearchTaskList.toArray(CompletableFuture[]::new))
+                         .get(ASYNC_SERVICE_TIMEOUT, TimeUnit.SECONDS);
+        subjectSearchTaskList.stream().forEach(task -> { try {
+                List<SubjectPostItemData> itemList = task.get().getData();
+                if (CollectionEmptyUtil.forList(itemList)) { return; }
+                subjectPostItemDataList.addAll(itemList.stream()
+                    .filter(i -> i.getRank() != 0)
+                    .limit(3)
+                    .toList());
+        } catch (Exception e) { e.printStackTrace(); }});
+        if (CollectionEmptyUtil.forList(subjectPostItemDataList)) { return List.of(); }
         return subjectPostItemDataList.stream()
-                .filter(DataParamParseUtil.modelDistinctByKey(SubjectPostItemData::getId))
-                .sorted(Comparator.comparingInt(SubjectPostItemData::getRank))
-                .toList();
+            .filter(DataParamParseUtil.modelDistinctByKey(SubjectPostItemData::getId))
+            .sorted(Comparator.comparingInt(SubjectPostItemData::getRank))
+            .toList();
     }
 
 }

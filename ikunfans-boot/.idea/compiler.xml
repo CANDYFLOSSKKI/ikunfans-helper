@@ -18,7 +18,6 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ikunfans-app" options="-parameters" />
-      <module name="ikunfans-boot" options="" />
       <module name="ikunfans-common" options="-parameters" />
       <module name="ikunfans-connect" options="-parameters" />
       <module name="ikunfans-db" options="-parameters" />

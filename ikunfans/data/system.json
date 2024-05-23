@@ -3,22 +3,22 @@
     "config": {
       "env": "local",
       "name": "ikunfans",
-      "baseDir": "D:\\Project\\frontend-repo\\electron-egg\\electron",
-      "HOME": "D:\\Project\\frontend-repo\\electron-egg",
-      "rundir": "D:\\Project\\frontend-repo\\electron-egg\\electron\\run",
+      "baseDir": "D:\\Project\\frontend-repo\\ikunfans\\electron",
+      "HOME": "D:\\Project\\frontend-repo\\ikunfans",
+      "rundir": "D:\\Project\\frontend-repo\\ikunfans\\electron\\run",
       "dump": {
         "ignore": {}
       },
-      "homeDir": "D:\\Project\\frontend-repo\\electron-egg",
-      "root": "D:\\Project\\frontend-repo\\electron-egg",
+      "homeDir": "D:\\Project\\frontend-repo\\ikunfans",
+      "root": "D:\\Project\\frontend-repo\\ikunfans",
       "appUserDataDir": "C:\\Users\\cteyn\\AppData\\Roaming\\ikunfans",
       "userHome": "C:\\Users\\cteyn",
       "appVersion": "1.2.0",
       "isPackaged": false,
-      "execDir": "D:\\Project\\frontend-repo\\electron-egg",
+      "execDir": "D:\\Project\\frontend-repo\\ikunfans",
       "logger": {
         "type": "application",
-        "dir": "D:\\Project\\frontend-repo\\electron-egg\\logs",
+        "dir": "D:\\Project\\frontend-repo\\ikunfans\\logs",
         "encoding": "utf8",
         "env": "local",
         "level": "INFO",
@@ -134,7 +134,7 @@
         "enable": true
       },
       "storage": {
-        "dir": "D:\\Project\\frontend-repo\\electron-egg\\data"
+        "dir": "D:\\Project\\frontend-repo\\ikunfans\\data"
       },
       "addons": {
         "window": {
@@ -178,7 +178,7 @@
         "mode": "undocked"
       },
       "windowsOption": {
-        "title": "IKUNFANS",
+        "title": "ikunfans",
         "width": 1000,
         "height": 600,
         "minWidth": 1000,
@@ -193,7 +193,7 @@
         "frame": false,
         "show": false,
         "resizable": false,
-        "icon": "D:\\Project\\frontend-repo\\electron-egg\\public\\images\\logo-white.png"
+        "icon": "D:\\Project\\frontend-repo\\ikunfans\\public\\images\\logo-origin.png"
       },
       "remoteUrl": {
         "enable": false,
