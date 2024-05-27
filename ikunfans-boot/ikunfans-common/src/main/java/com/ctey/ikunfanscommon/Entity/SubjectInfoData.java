@@ -5,8 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -19,7 +17,7 @@ public class SubjectInfoData {
     private String airDate;
     private String image;
     private String summary;
+    private Integer eps;
     private Double score;
     private Integer rank;
-    private List<String> tags;
 }

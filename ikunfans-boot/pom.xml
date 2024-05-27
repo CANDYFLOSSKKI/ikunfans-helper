@@ -17,7 +17,7 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<revision>1.0</revision>
+		<revision>1.2.3</revision>
 		<java.version>17</java.version>
 		<spring.version>3.1.5</spring.version>
 		<maven.compiler.source>17</maven.compiler.source>
@@ -145,24 +145,12 @@
 				<artifactId>feign-gson</artifactId>
 				<version>13.2.1</version>
 			</dependency>
+			<dependency>
+				<groupId>io.github.openfeign</groupId>
+				<artifactId>feign-okhttp</artifactId>
+				<version>13.2.1</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 
 </project>

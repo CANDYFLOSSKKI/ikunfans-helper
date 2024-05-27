@@ -45,13 +45,14 @@
         <home-page v-show="homePageShow" />
         <account-page v-show="accountPageShow" />
         <setting-page v-show="settingPageShow" />
+        <detail-page v-show="detailPageShow" />
       </a-layout-content>
     </a-layout>
   </div>
 </template>
 
 <script setup>
-import {computed, ref, watch} from "vue";
+import {computed, onMounted, ref, watch} from "vue";
 import { ipc } from '@/utils/ipcRenderer';
 import IMG_LOGO_ORIGIN from "@/assets/logo-origin.png";
 import IMG_LOGO_WHITE from "@/assets/logo-white.png";
@@ -64,13 +65,15 @@ import IMG_OFF_WHITE from "@/assets/off-white.png";
 import HomePage from "@/components/home-page/index.vue";
 import AccountPage from "@/components/account-page/index.vue";
 import SettingPage from "@/components/setting-page/index.vue";
-import LoginPage from "@/components/login-page/index.vue"
+import LoginPage from "@/components/login-page/index.vue";
+import DetailPage from "@/components/detail-page/index.vue";
 import {useAccountStore} from "@/store/account";
 import {useSubjectStore} from "@/store/subject";
 import {storeToRefs} from "pinia";
 import {resetAuthToken, setAuthToken} from "@/utils/http";
 import {Message} from "@arco-design/web-vue";
 import {AlertViewEventBus} from "@/utils/mitt";
+const ipcApiRoute = { close: 'controller.example.close' }
 const accountStore = useAccountStore();
 const subjectStore = useSubjectStore();
 const { loginFlag, loginToken } = storeToRefs(accountStore);
@@ -83,8 +86,7 @@ const IMG_OFF = ref(IMG_OFF_WHITE);
 const PAGE_HOME_SHOW_FLAG = ref(true);
 const PAGE_ACCOUNT_SHOW_FLAG = ref(false);
 const PAGE_SETTING_SHOW_FLAG = ref(false);
-
-const ipcApiRoute = { close: 'controller.example.close' }
+const PAGE_DETAIL_SHOW_FLAG = ref(false);
 
 const changeImgAccount = (img) => IMG_ACCOUNT.value = img;
 const changeImgSetting = (img) => IMG_SETTING.value = img;
@@ -95,49 +97,70 @@ const loginPageShow = computed(() => !loginFlag.value);
 const homePageShow = computed(() => PAGE_HOME_SHOW_FLAG.value && loginFlag.value);
 const accountPageShow = computed(() => PAGE_ACCOUNT_SHOW_FLAG.value && loginFlag.value);
 const settingPageShow = computed(() => PAGE_SETTING_SHOW_FLAG.value && loginFlag.value);
+const detailPageShow = computed(() => PAGE_DETAIL_SHOW_FLAG.value && loginFlag.value);
 
-function handleSkipToHomePage() {
-  if (!loginFlag.value || homePageShow.value) { return; }
-  PAGE_ACCOUNT_SHOW_FLAG.value = false;
-  PAGE_SETTING_SHOW_FLAG.value = false;
-  PAGE_HOME_SHOW_FLAG.value = true;
+async function handleSkipToHomePage() {
+  if (!loginFlag.value) { return; }
+  if (homePageShow.value) {
+    await subjectStore.getSubjectCalendar();
+  } else {
+    await subjectStore.getSubjectCalendar().then((_) => {
+      PAGE_ACCOUNT_SHOW_FLAG.value = false;
+      PAGE_SETTING_SHOW_FLAG.value = false;
+      PAGE_DETAIL_SHOW_FLAG.value = false;
+      PAGE_HOME_SHOW_FLAG.value = true;
+    });
+  }
 }
 
-function handleSkipToAccountPage() {
-  if (!loginFlag.value || accountPageShow.value) { return; }
-  PAGE_HOME_SHOW_FLAG.value = false;
-  PAGE_SETTING_SHOW_FLAG.value = false;
-  PAGE_ACCOUNT_SHOW_FLAG.value = true;
+async function handleSkipToAccountPage() {
+  if (!loginFlag.value) { return; }
+  if (accountPageShow.value) {
+    await subjectStore.getSubjectUser();
+  } else {
+    await subjectStore.getSubjectUser().then((_) => {
+      PAGE_HOME_SHOW_FLAG.value = false;
+      PAGE_SETTING_SHOW_FLAG.value = false;
+      PAGE_DETAIL_SHOW_FLAG.value = false;
+      PAGE_ACCOUNT_SHOW_FLAG.value = true;
+    });
+  }
 }
 
 function handleSkipToSettingPage() {
   if (!loginFlag.value || settingPageShow.value) { return; }
   PAGE_HOME_SHOW_FLAG.value = false;
   PAGE_ACCOUNT_SHOW_FLAG.value = false;
+  PAGE_DETAIL_SHOW_FLAG.value = false;
   PAGE_SETTING_SHOW_FLAG.value = true;
 }
 
-watch(PAGE_ACCOUNT_SHOW_FLAG, async (newValue, _) => {
-  if (newValue) {
-    await subjectStore.getSubjectUser().catch((_) => Message.warning('加载用户历史信息失败'));
-  }
-})
+function handleSkipToDetailPage() {
+  PAGE_HOME_SHOW_FLAG.value = false;
+  PAGE_ACCOUNT_SHOW_FLAG.value = false;
+  PAGE_SETTING_SHOW_FLAG.value = false;
+  PAGE_DETAIL_SHOW_FLAG.value = true;
+}
 
 watch(loginFlag, async (newValue, _) => {
   if (newValue) {
     setAuthToken(loginToken.value);
-    await accountStore.getUserInfo().then((_) => {
-      handleSkipToHomePage();
-    })
+    await accountStore.getUserInfo().then((_) => handleSkipToHomePage());
   }
 })
 
 AlertViewEventBus.on("logout", async (_) => {
   resetAuthToken();
+  subjectStore.clearSubjeFEctList();
   accountStore.logout();
   PAGE_HOME_SHOW_FLAG.value = false;
   PAGE_ACCOUNT_SHOW_FLAG.value = false;
   PAGE_SETTING_SHOW_FLAG.value = false;
+  PAGE_DETAIL_SHOW_FLAG.value = false;
+})
+
+AlertViewEventBus.on("detail", async (_) => {
+  handleSkipToDetailPage();
 })
 
 function handleCloseFrame() {

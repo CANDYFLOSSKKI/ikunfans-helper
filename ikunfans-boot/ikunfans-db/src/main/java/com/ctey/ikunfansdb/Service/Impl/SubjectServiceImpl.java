@@ -52,4 +52,10 @@ public class SubjectServiceImpl extends ServiceImpl<SubjectMapper, Subject> impl
         return subjectMapper.selectList(wrapper);
     }
 
+    @Override
+    public boolean hasSubject(long id) {
+        LambdaQueryWrapper<Subject> wrapper = new LambdaQueryWrapper<>();
+        wrapper.eq(Subject::getId, id);
+        return subjectMapper.exists(wrapper);
+    }
 }

@@ -1,9 +1,9 @@
 package com.ctey.ikunfansweb.Controller;
 
+import com.ctey.ikunfanscommon.Entity.UserInfoData;
 import com.ctey.ikunfanscommon.Req.UserLoginReq;
 import com.ctey.ikunfanscommon.Resp.DefaultDataResp;
 import com.ctey.ikunfanscommon.Resp.DefaultMsgResp;
-import com.ctey.ikunfanscommon.Entity.UserInfoData;
 import com.ctey.ikunfanscommon.Util.ModelTransformUtil;
 import com.ctey.ikunfansweb.Service.UserWebService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +22,7 @@ public class UserController {
     @PostMapping("/login")
     public DefaultMsgResp postUserLogin(@RequestBody UserLoginReq req) {
         String token = userWebService.handleUserLogin(req);
-        return ModelTransformUtil.getDefaultMsgInstance(token != null, "用户登陆", token);
+        return ModelTransformUtil.getDefaultMsgInstance(token != null, "用户登录", token);
     }
 
     @PostMapping("/sign")

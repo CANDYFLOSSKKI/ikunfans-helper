@@ -1,8 +1,6 @@
 package com.ctey.ikunfanscommon.Resp.Bangumi;
 
-import com.ctey.ikunfanscommon.Entity.Bangumi.SubjectImageData;
-import com.ctey.ikunfanscommon.Entity.Bangumi.SubjectInfoBoxData;
-import com.ctey.ikunfanscommon.Entity.Bangumi.SubjectTagData;
+import com.ctey.ikunfanscommon.Entity.Bangumi.*;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -30,7 +28,7 @@ public class BangumiSubjectDetailResp {
     private int eps;
     @JsonProperty("total_episodes")
     private int totalEpisodes;
-    private Object rating;
-    private Object collection;
+    private SubjectDetailRatingData rating;
+    private SubjectCollectionData collection;
     private List<SubjectTagData> tags;
 }

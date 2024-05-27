@@ -13,4 +13,7 @@ public class WebModuleStatic {
     public static final int WEB_RESP_CODE_SUCCESS = 200;
     public static final int WEB_RESP_CODE_FAILURE = 500;
     public static final int ASYNC_SERVICE_TIMEOUT = 30000;
+    public static final int AI_MODE_GET = 1;
+    public static final int AI_MODE_POST = 2;
+
 }

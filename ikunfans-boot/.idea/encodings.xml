@@ -3,9 +3,13 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/ikunfans-app/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ikunfans-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ikunfans-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ikunfans-connect/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ikunfans-connect/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ikunfans-db/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ikunfans-db/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ikunfans-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ikunfans-web/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

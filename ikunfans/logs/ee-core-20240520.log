@@ -8,3 +8,5 @@
 2024-05-20 16:53:36,413 INFO 235632 [ee-core] App running at: http://localhost:13880
 2024-05-20 16:55:44,658 INFO 235896 [ee-core] Env: local, Type: spa
 2024-05-20 16:55:44,658 INFO 235896 [ee-core] App running at: http://localhost:13880
+2024-05-20 17:53:03,103 INFO 201436 [ee-core] Env: local, Type: spa
+2024-05-20 17:53:03,104 INFO 201436 [ee-core] App running at: http://localhost:13880

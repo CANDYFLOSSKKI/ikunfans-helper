@@ -7,8 +7,8 @@ import java.util.List;
 
 public interface FavoriteService extends IService<Favorite> {
     public List<Favorite> getFavoriteListById(String id);
-    public List<Favorite> getLimitFavoriteListById(String id);
-    public void updateFavoriteList(List<Favorite> favoriteList);
-    public void storeFavoriteList(List<Favorite> favoriteList);
+    public void addFavorite(String userId, long subjectId);
+    public void removeFavorite(String userId, long subjectId);
+    public boolean getFavoriteStatus(String userId, long subjectId);
 
 }

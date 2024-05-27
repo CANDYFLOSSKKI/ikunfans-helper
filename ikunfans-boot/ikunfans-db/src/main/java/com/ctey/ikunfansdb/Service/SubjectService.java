@@ -9,5 +9,5 @@ public interface SubjectService extends IService<Subject> {
     public List<Integer> getIdList();
     public List<Subject> getFavoriteSubjectList(List<Long> idList);
     public void storeSubjectList(List<Subject> subjectList);
-
+    public boolean hasSubject(long id);
 }

@@ -25,6 +25,7 @@ public class Subject extends Model<Subject> {
     private String airDate;
     private String image;
     private String summary;
+    private Integer eps;
     private Double score;
     @TableField("score_rank")
     private Integer scoreRank;

@@ -174,9 +174,7 @@
       "jobs": {
         "messageLog": true
       },
-      "openDevTools": {
-        "mode": "undocked"
-      },
+      "openDevTools": true,
       "windowsOption": {
         "title": "ikunfans",
         "width": 1000,

@@ -20,11 +20,11 @@ public class SubjectGetItemData {
     private String airDate;
     @JsonProperty("air_weekday")
     private String airWeekday;
+    private SubjectRatingData rating;
     private SubjectImageData images;
     private int eps;
     @JsonProperty("eps_count")
     private int epsCount;
-    private SubjectRatingData rating;
     private int rank;
     private Object collection;
 }
